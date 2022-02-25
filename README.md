@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+React : 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+features of React 
+React v/s angular v/s vue
+Why you chose react 
+why react is so powerful
 
-In the project directory, you can run:
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+JS library developed by Facebook
+SPA - single page application :
+	Any web application , in which when you are clicking on any button or selecting option from navigation bar then if your page which means browser page is reloading then that means that application is your multi - page application . 
+	If it does not reload the browser page and just only updates the page without reloading then that application is known as Single Page application. 
+	When you create React application using CRA, (create-react-app boilerplate , developed by Facebook) it always create the application which will be Single page application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+component structure :
+	Whenever we are creating React application so the complete screen component will be broke down into smaller components.
+	We do this thing to make sure that these components can be reused at any time when required.
+	React we have two different types of components : Class and Functional.
+	In React we also create smart and dumb components. Smart are the ones in which state variable is there and you can do all the data manipulation in this. Dumb are the ones which only used for UI, they receive data from parent component as props.
 
-### `yarn test`
+Virtual DOM :
+	DOM is a document object model, created by converting HTML CSS and JS
+	Real DOM, which is an object which gets created whenever any React application gets loaded on the screen for the first time., whenever React components gets mounted on the screen for the first time.
+	Now when any user makes any changes on the screen like button click because of which the state variable will get updated so in this case the changes will not directly go to Real DOM , instead in react we have concept known Virtual DOM.
+	So we are having two virtual doms, one virtual dom gets created at the time of mounting of react component so it is a copy of your real dom. Another virtual dom is the dom which contains the new changes, updated state variables values.
+	Now these two virtual doms will get compared with each other and will check for the new changes. this complete procedure is known as diffing algorithm.
+	Now the new changes will be updated in your Real dom. this procedure is known as Recoinciliation.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Good community support : 
 
-### `yarn build`
+Build User interface :
+	used to build Front-end application
+JSX	: 
+	Writing HTML inside JS, because in React we write HTML CSS and JS in same file , unlike Angular
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Easy learning curve : 
+	It requires only the knowledge of Javascript. But in case of Angular it requires Typescript.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React Native : 
+	Using React we can create mobile - application as well which supports both Android and iOS.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Client Side rendering
+one way binding
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Library v/s Framework
+	:Library is a collection of functions
+	:Framework is a collection of multiple other libraries.
+	:Inversion of Control = In case of library the Execution of code will be decided by the developers whereas in case of framework the execution is already defined or decided.
+	:In case of Framework, it follows MVC structure (model view controller) whereas a library can only be the one for example React is View of MVC
+	:Framework provides you a structure in which you just put down the code your functionality , in case of library its developers duty to design the structure.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Readme.md :
+	MarkDown Documentation= md 
+	This contains information about the project that which file contains what information and also contains info like how a new person who is starting with the project how they have to start with the project
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+package.json : 
+	It contains the information about the project and also contains the libraries which the project is using and it also has the description of the commands which gets used to run test or build your project.
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+package-lock.json :
+	It contains information about the major libraries and if these libraries are having any extra dependency on other libraries so that information will also be stored over here.
 
-### Deployment
+.gitignore:
+	we can list down all the folders or file which we do not want to push during pushing the changes in github like node_modules.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `yarn build` fails to minify
+public/index.html:
+	this file contains one div element in which a id is stored which is used to render your complete application at this id
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+src/index.js :
+	In this file you will render your complete React application at the id given in index.html file.
+
+
+src/App.js : 
+	From this file ,developers can start building their React application
