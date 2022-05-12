@@ -33,7 +33,7 @@ Good community support :
 Build User interface :
 	used to build Front-end application
 JSX	: 
-	Writing HTML inside JS, because in React we write HTML CSS and JS in same file , unlike Angular
+	Initially when React developed it was pure JS library in which we were able to write only JS inside a component. To add HTML on webpage React used React.createElement function. But this function was getting complex when you want to build big web pages. Later React introduced JSX which allowed us to write HTML and JS in a single file.
 
 Easy learning curve : 
 	It requires only the knowledge of Javascript. But in case of Angular it requires Typescript.
